@@ -1,0 +1,11 @@
+{
+  "name": "authtdd",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:javascripto/authtdd.git",
+  "author": "Yuri Alves <yurialves2@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
