@@ -3,7 +3,7 @@
 npm i -g yarn
 yarn init -y
 yarn add express sequelize pg mysql2 dotenv
-yarn add sequelize nodemon jest sqlite3 -D
+yarn add sequelize nodemon jest sqlite3 supertest -D
 
 <!-- Iniciando sequilize e gerando arquiivos -->
 yarn sequelize init
