@@ -1,24 +1,20 @@
-# Dependences and sequelize init
+# Dependencies
 
+```sh
 npm i -g yarn
 yarn init -y
 yarn add express sequelize pg mysql2 dotenv bcryptjs
 yarn add sequelize nodemon jest sqlite3 supertest -D
+```
 
-<!-- Iniciando sequilize e gerando arquiivos -->
-yarn sequelize init
+## Sequelize
 
-<!-- Criando Migratoin -->
-yarn sequelize migration:create --name=create-users
+- Initialization: `yarn sequelize init`
+- Creating Migration: `yarn sequelize migration:create --name=create-users`
+- Creating database on mysql: `echo 'create schema nodeauth' | mysql -uroot -p`
+- Running Migrations: `yarn sequelize db:migrate`
 
-<!-- Criando bando no mysql antes de rodar migration -->
-echo 'create schema nodeauth' | mysql -uroot -p
+## Jest 
 
-<!-- Rodando migrations: -->
-yarn sequelize db:migrate
-
-<!-- Iniciando jest para TDD -->
-yarn jest --init
-
-<!-- rodando testes -->
-yarn test
+- Jest initialization: `yarn jest --init`
+- Running Tests: `yarn test`

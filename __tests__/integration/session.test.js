@@ -18,11 +18,28 @@ describe('Authentication', () => {
       .post('/sessions')
       .send({
         email: user.email,
-        password: '123456'
+        password: 'asd12yad8721'
       });
 
     expect(response.status).toBe(200);
 
+  });
+
+  it('should not authenticate with invalid credentials', async () => {
+    const user = await User.create({
+      name: 'Yuri',
+      email: 'yurialves2@gmail.com',
+      password: 'asd12yad8721'
+    });
+
+    const response = await request(app)
+      .post('/sessions')
+      .send({
+        email: user.email,
+        password: '123456'
+      });
+
+    expect(response.status).toBe(401);
   });
 
 });
