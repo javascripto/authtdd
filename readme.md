@@ -1,10 +1,10 @@
-# Dependencies
+# Installing Dependencies
 
 ```sh
 npm i -g yarn
 yarn init -y
-yarn add express sequelize pg mysql2 dotenv bcryptjs
-yarn add sequelize nodemon jest sqlite3 supertest -D
+yarn add express sequelize pg mysql2 dotenv bcryptjs jsonwebtoken factory-girl faker
+yarn add sequelize-cli nodemon jest sqlite3 supertest -D
 ```
 
 ## Sequelize
