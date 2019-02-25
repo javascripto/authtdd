@@ -14,7 +14,8 @@ yarn add sequelize-cli nodemon jest sqlite3 supertest -D
 - Creating database on mysql: `echo 'create schema nodeauth' | mysql -uroot -p`
 - Running Migrations: `yarn sequelize db:migrate`
 
-## Jest 
+## Jest
 
 - Jest initialization: `yarn jest --init`
 - Running Tests: `yarn test`
+- Path to file with coverage details: `__tests__/coverage/lcov-report/index.html`
