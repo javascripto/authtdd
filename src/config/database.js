@@ -4,7 +4,7 @@ module.exports = {
   username: 'root',
   password: 'root',
   database: 'nodeauth',
-  dialect: 'postgress',
+  dialect: 'mysql',
   operatorsAliases: false,
   logging: false,
   define: {
