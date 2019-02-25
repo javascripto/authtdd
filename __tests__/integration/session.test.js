@@ -5,9 +5,9 @@ const truncate = require('../utils/truncate');
 
 describe('Authentication', () => {
 
-  beforeEach(async() => await truncate());
+  beforeEach(async () => await truncate());
 
-  it('should authenticate with valid credentials', async() => {
+  it('should authenticate with valid credentials', async () => {
     const user = await User.create({
       name: 'Yuri',
       email: 'yurialves2@gmail.com',
@@ -16,7 +16,10 @@ describe('Authentication', () => {
 
     const response = await request(app)
       .post('/sessions')
-      .send({ email: user.email, password: '123456'});
+      .send({
+        email: user.email,
+        password: '123456'
+      });
 
     expect(response.status).toBe(200);
 
