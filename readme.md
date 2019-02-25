@@ -2,8 +2,8 @@
 
 npm i -g yarn
 yarn init -y
-yarn add express sequelize pg mysql2
-yarn add sequelize -D
+yarn add express sequelize pg mysql2 dotenv
+yarn add sequelize nodemon jest -D
 
 <!-- Iniciando sequilize e gerando arquiivos -->
 yarn sequelize init
@@ -16,3 +16,9 @@ echo 'create schema nodeauth' | mysql -uroot -p
 
 <!-- Rodando migrations: -->
 yarn sequelize db:migrate
+
+<!-- Iniciando jest para TDD -->
+yarn jest --init
+
+<!-- rodando testes -->
+yarn test
